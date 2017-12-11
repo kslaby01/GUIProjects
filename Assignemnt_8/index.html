@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Comp86 Assignment 8</title>
+
+<script src="http://threejs.org/build/three.min.js"></script>
+<script src="http://threejs.org/examples/js/Detector.js"></script>
+<script src="http://threejs.org/examples/js/controls/OrbitControls.js"></script>
+<script src="http://threejs.org/examples/js/loaders/OBJLoader.js"></script>
+
+<script src="https://download.affectiva.com/js/3.2/affdex.js"></script>
+
+<script src="main.js"></script>
+<!-- <script src="webgaze.js"></script>
+<script src="./webgazer.js"></script> -->
+<script src="boiler.js"></script>
+<script src="lights.js"></script>
+<script src="canvas.js"></script>
+
+<link href="style.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+  <div>
+    <div>
+      <button id="start" onclick="onStart()">Start</button>
+      <button id="stop" onclick="onStop()">Stop</button>
+      <div id="test">Start the game, try not to lose 3 lives! Emotions spawn every 15 seconds starting at 30 to give you time to prepare your webcam after starting.</div>
+      <!-- button id="reset" onclick="onReset()">Reset</button> -->
+    </div>
+    <div class="scorelabel">
+    	<p id="lives">
+    		Lives: 3
+    	</p>
+    	<p id="msgs">
+    	</p>
+    </div>
+
+<!-- canvas -->
+    <div>
+    	<div id="theContainer"></div>
+    </div>
+    <div id="affdex_info">
+      <div id="affdex_elements" style="width:680px;height:480px;">
+      	<!-- possibly remove this later? -->
+      </div>
+      <div>
+        <div>
+	  <br/><br/><br/><br/>
+          <strong>Test UI</strong>
+	  <br/><br/><br/><br/><br/>
+	  <div id="myui" style="color:red;"></div>
+        </div>
+        <div style="height:25em;">
+          <strong>Emotion Tracking Results</strong>
+          <div id="results" style="word-wrap:break-word;"></div>
+        </div>
+        <div>
+          <strong>Detector Log Msgs</strong>
+	  <div id="logs"></div>
+	  <div id="result"></div>
+	  <div id="target"></div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

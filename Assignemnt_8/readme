@@ -1,0 +1,22 @@
+readme
+
+Kenneth Slaby and Natalie Gilbert
+kslaby01 ngilbe01
+Kenneth.Slaby@tufts.edu
+Natalie.Gilbert@tufts.edu
+
+About:
+This project uses the Affectiva webcam API in order to play a simple game with emojis in a 3D environment. 
+
+Notes:
+We originally intended to use WebGazer's webcam API in additon to Affectiva's, but it turned out to not be as compatable as we originally believed. Its possible that with more time it could have been merged together, but in the time we had we were unable to successfully integrate them.
+
+Running the program:
+In the Command Line, change to the directory where the project is located. Make sure python2.7 is installed.
+
+Run: python -m SimpleHTTPServer
+
+Open: localhost:8000
+
+Play: Press start to start the Webcam, Stop pauses the game. Make the corresponding face at the emoji as it comes close to you. When it gets close enough, if you have not made the correct face, it will disspear. Refresh the page if you win or lose to try again!
+

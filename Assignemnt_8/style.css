@@ -1,0 +1,20 @@
+canvas#face_video_canvas {
+	/* set display to none to remove the webcam*/
+	/*display: block!important;*/
+} 
+
+#affdex_info {
+	/* set display to none to remove the webcam*/
+	/*display: block!important;*/
+	display: none!important;
+} 
+
+#theContainer canvas{
+	height: 800px!important;
+	width: 100%!important;
+}
+
+#test{
+	display: block;
+	position: absolute;
+}
